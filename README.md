@@ -2,7 +2,9 @@
 
 A demo in using  [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout) to quickly mock up application interfaces that kind of look like an iCloud web interface.
 
-[App Panes Demo](https://raw.githubusercontent.com/jyunderwood/app-panes-css/master/screenshot.png)
+![App Panes Demo](https://raw.githubusercontent.com/jyunderwood/app-panes-css/master/screenshot.png)
+
+[View Live Demo](http://jyunderwood.github.io/app-panes-css)
 
 ## CSS class overview
 
