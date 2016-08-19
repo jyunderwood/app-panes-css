@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+Set the height only if you're ok with the rubber banding effect on Apple OSes.
+Disable the effect on the application pane by setting width and overflow as well.
+*/
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Pane */
+
+.pane {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 0;
+}
+
+.pane:nth-child(n+2) {
+  border-left: 1px solid #D9D9D9;
+}
+
+.pane--application {
+  height: 100vh;
+}
+
+.pane--details {
+  flex: 2 0 0;
+}
+
+/* Pane Child Elements */
+
+.pane__bar {
+  flex: none;
+
+  color: #A1A1A1;
+  background-color: #f6f6f6;
+  border: 1px solid #D9D9D9;
+  border-left: none;
+  border-right: none;
+}
+
+.pane > .pane__bar:first-child {
+  border-top: none;
+}
+
+.pane > .pane__bar:last-child {
+  border-bottom: none;
+}
+
+.pane__outlet,
+.pane__content {
+  flex: 2;
+}
+
+.pane__outlet {
+  display: flex;
+}
+
+.pane__content {
+  overflow-y: scroll;
+}
+
+/* Slightly more pretty */
+
+h1, h2, h3, h4, h5, h6, p {
+  font-family: sans-serif;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 8px;
+}
+
+.pane--application > .pane__bar {
+  background-color: #DCF0FC;
+  border-color: #BAD0DF;
+  color: #758899;
+}
