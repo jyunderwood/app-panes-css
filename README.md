@@ -22,6 +22,6 @@ To demonstrate using [flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/
 
 Some neat pseudo selector usages:
 
-- Borders for `.pane__bar` changes because of `.pane > .pane__bar:first-child` or `.pane > .pane__bar:last-child` so you don't need to express anything else like "header" or "footer". Note, just `.pane__bar:first-child` won't work, you need a parent selector, too.
+- Borders for `.pane__bar` change because of `.pane > .pane__bar:first-child` or `.pane > .pane__bar:last-child` so you don't need to express anything else like "header" or "footer." Note, just `.pane__bar:first-child` won't work, you need a parent selector, too.
 
 - Sibling panes get a left border when needed thanks to `.pane:nth-child(n+2)`.
